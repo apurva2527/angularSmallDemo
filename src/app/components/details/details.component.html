@@ -1,0 +1,21 @@
+<div>
+    <div class="p-3 m-3">
+        <div style="width:300px; float: left; height: 500px; border: 1px solid #000;"> 
+            <app-nav></app-nav>
+        </div> 
+        <div style="width:600px;  float: left; height: 500px; border: 1px solid #000;"> 
+            <form [formGroup]="signupForm" (ngSubmit)="addUser()">
+                <div class="p-3 m-3">
+                    <label for="firstname">First Name </label>
+                    <input type="text" id="firstname" formControlName="firstname" class="form-control">
+                </div>
+                <div  class="p-3 m-3">
+                    <label for="lastname">Last Name </label>
+                    <input class="form-control" id="lastname" formControlName="lastname" type="text">
+                </div>
+                <button class="btn btn-primary m-3" type="submit">Save</button>
+                <button class="btn btn-primary m-3" type="button">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>
